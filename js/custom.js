@@ -180,7 +180,7 @@ Project: Wedding Template
         //For Clock Counting
         ClockCounting: function() {
             var clock1;
-            var futureDate = new Date("Aug 30, 2016 05:02 PM EST");
+            var futureDate = new Date("Dec 15, 2023 21:00:00 GMT+0530");
             var currentDate = new Date();
 
             // Calculate the difference in seconds between the future and current date
@@ -221,6 +221,6 @@ Project: Wedding Template
     // Load Event
     $(window).on('load', function() {
         //Preloader
-        $("#preloader").delay(4000).fadeOut("slow");
+        $("#preloader").delay(0).fadeOut("slow");
     });
 })(jQuery);
