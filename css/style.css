@@ -116,6 +116,9 @@ body {
   animation: textclip 2s linear infinite;
   
 }
+.button-heading{
+    position: absolute;
+}
 
 @keyframes textclip {
   to {
@@ -272,13 +275,16 @@ body {
 .wd_img_overlay{
     float: left;
     width: 100%;
-    background: rgba(154, 173, 98, 0.7);
+    height: 40%;
+    background: rgba(237, 36, 55, 0.7);
     position: absolute;
     bottom: 0px;
-    color: #fff;
+    color: #ED2437;
 	padding: 20px 0px;
     z-index: 100;
 }
+
+
 .wd_img_overlay img{
     position: absolute;
     left: 50%;
@@ -351,8 +357,8 @@ animation: bouncing 3s infinite;
 	cursor: pointer;
 }
 .wd_scroll a {
-    font-size: 10px;
-    color: #fff;
+    font-size: 15px;
+    color: #ED2437;
     display: block;
     position: absolute;
     top: 0;
@@ -389,20 +395,32 @@ animation: bouncing 3s infinite;
 .large-header {
     position: relative;
     width: 100%;
-    background: url(../images/Color-Lookup-1.jpg);
+    background: url(../images/bhaiBhabhi.JPG);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    background-size: cover;
-	animation:100s ease 0s normal none infinite scales;
+    background-size: cover!important;
+	/* animation:100s ease 0s normal none infinite scales; */
+}
+.heading-buttons {
+  padding-top: 1rem;
 }
 .large-header canvas {
 	width: 100%;
     position: absolute;
     bottom: 0;	
+}
+.btn-margin-top{
+    margin-top: 2rem;
+    background-color: #ED2437;
+    color: white;
+}
+.btn-margin-top2{
+    margin-top: 2rem;
+    background-color: purple;
 }
 @keyframes scale {
 	0% {
@@ -445,6 +463,20 @@ animation: bouncing 3s infinite;
     width: 100% !important;
     height: 100% !important;
 	left: 0px !important; 
+    
+}
+
+@media screen and (max-width: 1080px) {
+	.image-dp{
+       transform:  translate(0, -100%);
+        
+    }
+}
+@media screen and (max-width: 735px) {
+	.image-dp{
+       transform:  translate(5%, -150%);
+        
+    }
 }
 /* Our Story Start */
 .wd_story_section {
@@ -541,6 +573,15 @@ animation: bouncing 3s infinite;
   width: 300px;
   height: 50px;
   top: 125px;
+}
+.image-1{
+    width: 330px;
+}
+.image-2{
+    width: 300px;
+}
+.image-st{
+    width: 65%;
 }
 
 .story_section .wd_img_round:hover .overlay span {
@@ -652,7 +693,7 @@ background: url(../images/small_heart.svg);
 .ws_counter {
     position: absolute;
     z-index: 1000;
-    top: 50%;
+    top: 80%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -1292,3 +1333,14 @@ input[type=text]::-ms-clear {
 	color: #ffffff;
 }
 /* Footer Section END */
+@media only screen and (max-width: 600px) {
+    .wd_img_overlay{
+        color: white;
+    }
+    .wd_scroll {
+        background: url(../images/little_heart2.png);
+    }
+    .wd_scroll a {
+        color: #fff;
+    }
+  }
